@@ -1,0 +1,25 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Mendefinisikan 3 kolom dengan lebar yang sama */
+}
+
+@media (max-width: 1000px) {
+  .projects {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Mengubah menjadi 2 kolom pada lebar layar yang lebih kecil */
+  }
+}
+
+@media (max-width: 750px) {
+  .projects {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Mengubah menjadi 2 kolom pada lebar layar yang lebih kecil */
+  }
+}

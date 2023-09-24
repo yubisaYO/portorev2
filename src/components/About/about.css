@@ -1,0 +1,202 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vw;
+}
+
+.aboutImg {
+  display: none;
+}
+
+.aboutTitle {
+  font-size: 30px;
+  margin-bottom: 3vw;
+}
+
+.descContent {
+}
+
+.aboutLine {
+  width: 2px;
+  height: 2px;
+}
+.descAbout {
+  font-size: 2.8vw;
+  text-align: justify;
+}
+
+.aboutImg {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 30vw;
+  height: 30vw;
+}
+
+.skill {
+}
+.skillTitle {
+  font-size: 24px;
+}
+
+.skillList {
+  gap: 5px;
+}
+.skillList li {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+  .aboutTitle {
+    font-size: 30px;
+    margin-bottom: 3vw;
+  }
+
+  .descContent {
+    /* background: salmon; */
+  }
+
+  .aboutLine {
+    width: 2px;
+    height: 2px;
+  }
+  .descAbout {
+    font-size: 2.2vw;
+    text-align: justify;
+  }
+
+  .aboutImg {
+    display: block;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .skill {
+  }
+  .skillTitle {
+    font-size: 24px;
+  }
+
+  .skillList {
+    gap: 5px;
+  }
+  .skillList li {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+  }
+  .aboutTitle {
+    font-size: 30px;
+    margin-bottom: 3vw;
+  }
+
+  .descContent {
+    /* background: green; */
+    display: flex;
+    gap: 2vw;
+  }
+
+  .aboutLine {
+    width: 2px;
+    height: 2px;
+  }
+  .descAbout {
+    font-size: 1.8vw;
+    text-align: justify;
+    flex: 1;
+    order: 1;
+  }
+
+  .aboutImg {
+    display: block;
+    float: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 28vw;
+    height: 28vw;
+    flex: 1;
+    order: 2;
+  }
+
+  .skill {
+  }
+  .skillTitle {
+    font-size: 24px;
+  }
+
+  .skillList {
+    gap: 5px;
+  }
+  .skillList li {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw;
+  }
+  .aboutTitle {
+    font-size: 30px;
+    margin-bottom: 3vw;
+  }
+
+  .descContent {
+    /* background: yellow; */
+    display: flex;
+    gap: 1vw;
+  }
+
+  .aboutLine {
+    width: 2px;
+    height: 2px;
+  }
+  .descAbout {
+    font-size: 1.3vw;
+    text-align: justify;
+    flex: 1;
+    order: 1;
+  }
+
+  .aboutImg {
+    display: block;
+    float: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 25vw;
+    height: 25vw;
+    flex: 1;
+    order: 2;
+  }
+
+  .skill {
+  }
+  .skillTitle {
+    font-size: 24px;
+  }
+
+  .skillList {
+    gap: 5px;
+  }
+  .skillList li {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,155 @@
+.typed-cursor {
+  color: #5c6bc0;
+}
+
+.typed-cursor {
+  font-size: 5vw;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heroImg {
+  height: 350px;
+  width: 350px;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+}
+.name {
+  font-size: 6vw;
+}
+
+.job {
+  font-size: 5vw;
+}
+.social-media {
+  gap: 2vw;
+}
+.social-media li i {
+  font-size: 4vw;
+}
+.cv {
+  padding: 3vw 5vw;
+}
+
+.cv a {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .typed-cursor {
+    font-size: 5vw;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+  }
+  .heroImg {
+    height: 40vw;
+    width: 40vw;
+  }
+  .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5vw;
+  }
+  .name {
+    font-size: 5vw;
+  }
+
+  .job {
+    font-size: 4vw;
+  }
+  .social-media {
+    gap: 2vw;
+  }
+  .social-media li i {
+    font-size: 3vw;
+  }
+  .cv {
+    padding: 2vw 4vw;
+  }
+}
+@media (min-width: 1024px) {
+  .typed-cursor {
+    font-size: 5vw;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+  }
+  .heroImg {
+    height: 40vw;
+    width: 40vw;
+  }
+  .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5vw;
+  }
+  .name {
+    font-size: 5vw;
+  }
+
+  .job {
+    font-size: 4vw;
+  }
+  .social-media {
+    gap: 2vw;
+  }
+  .social-media li i {
+    font-size: 3vw;
+  }
+  .cv {
+    padding: 2vw 4vw;
+  }
+}
+@media (min-width: 1280px) {
+  .typed-cursor {
+    font-size: 3vw;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+  }
+  .heroImg {
+    height: 35vw;
+    width: 35vw;
+  }
+  .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vw;
+  }
+  .name {
+    font-size: 4.5vw;
+  }
+
+  .job {
+    font-size: 3vw;
+  }
+  .social-media {
+    gap: 2vw;
+  }
+  .social-media li i {
+    font-size: 2.5vw;
+  }
+  .cv {
+    padding: 1.5vw 3vw;
+  }
+}
+@media (min-width: 1536px) {
+}
