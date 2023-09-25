@@ -26,12 +26,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div
-      className="flex justify-center h-full test"
-      style={{ marginTop: "15px" }}
-    >
+    <div className="min-h-screen flex justify-center items-center">
       <div
-        className="justify-center h-full w-full items-center hero-container"
+        className="h-full w-full hero-container"
         style={{ maxWidth: "1250px" }}
       >
         <div

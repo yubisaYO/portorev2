@@ -26,7 +26,7 @@ const Navbar = () => {
     <div
       className={`fixed top-0 w-full  bg-white py-6 flex justify-around items-center shadow-md mx-auto transition duration-150 ease-out z-50`}
     >
-      <h1 className="font-bold text-3.5vw md:text-2.5vw xl:text-2vw 2xl:text-1.5vw">
+      <h1 className="font-bold text-md md:textmd xl:text-xl 2xl:text-2xl">
         PORTFOLIO.
       </h1>
 

@@ -34,35 +34,44 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full max-w-screen-xl mx-auto flex gap-20 bg-indigo-500 px-4 py-5 rounded-3xl shadow-xl ">
-      <div
-        className="w-full mx-auto flex gap-5 md:gap-20 bg-white rounded-lg"
-        style={{ height: "100vh", border: "1px solid black" }}
-      >
-        <div className="flex w-1/2">
-          <div className="w-1/4 flex justify-center items-center h-full bg-indigo-400">
-            <h1
-              style={{ writingMode: "vertical-rl", textOrientation: "upright" }}
-              className="text-4xl font-bold text-white"
-            >
-              My Contact Info
-            </h1>
-          </div>
-          <ul className="linkProfile w-3/4 flex flex-col justify-evenly px-2">
+    <div className="w-full h-full max-w-screen-xl mx-auto flex gap-20 bg-indigo-500 px-4 py-5 rounded-3xl shadow-xl ">
+      <div className="p-4 w-full h-full mx-auto flex flex-col justify-evenly items-center rounded-lg bg-blue-50 lg:flex-row lg:justify-center lg:py-0 lg:pl-0 shadow-lg">
+        <div className="w-full lg:w-1/4 lg:flex lg:h-full lg:border-solid lg:border-2 lg:border-r-gray-500 lg:border-y-black">
+          <h1 className="hidden md:block md:text-4xl md:mb-4 lg:hidden  text-center font-bold">
+            My Contact Info
+          </h1>
+          <h1
+            style={{ writingMode: "vertical-rl", textOrientation: "upright" }}
+            className="hidden lg:block  text-3xl text-center font-bold px-2 bg-neutral-700 text-white"
+          >
+            My <strong className="text-indigo-400">Contact</strong> Info
+          </h1>
+          <ul className="w-full linkProfile flex lg:flex-col justify-evenly items-center">
             <li>
-              <FontAwesomeIcon icon={faPhoneVolume} />
+              <a href="https://wa.link/210nhu">
+                <FontAwesomeIcon icon={faPhoneVolume} className="icon" />
+              </a>
               <span>+62 877-8515-0006</span>
             </li>
             <li>
-              <FontAwesomeIcon icon={faEnvelope} />
-              <span>Charles.liu56@gmai.com</span>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqXQFdvqBDhzvVKshvvKBNBBWmfLBTmLVbkTWrRBJVhNLRJPznKBcJpzLmLBwjSgvdncjB">
+                <FontAwesomeIcon icon={faEnvelope} className="icon" />
+              </a>
+
+              <span>Charles.liu56@gmail.com</span>
             </li>
             <li>
-              <FontAwesomeIcon icon={faLocationDot} />
+              <a href="https://www.google.com/maps/place/Jl.+Vikamas+Raya,+RW.5,+Kapuk+Muara,+Kec.+Penjaringan,+Jkt+Utara,+Daerah+Khusus+Ibukota+Jakarta+14460/@-6.1325964,106.7685076,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6a1d81fd917367:0x35770352da3eec01!8m2!3d-6.1326017!4d106.7710825!16s%2Fg%2F1hm1x8qfy?entry=ttu">
+                <FontAwesomeIcon icon={faLocationDot} className="icon" />
+              </a>
+
               <span>Vikamas 1 blok bb no 12 b</span>
             </li>
             <li>
-              <i className="bx bxl-linkedin text-black"></i>
+              <a href="https://www.linkedin.com/in/charles-liu-75a5b2277/">
+                <i className="bx bxl-linkedin text-black icon"></i>
+              </a>
+
               <a
                 href="https://www.linkedin.com/in/charles-liu-75a5b2277/"
                 target="_blank"
@@ -73,7 +82,9 @@ const Contact = () => {
               </a>
             </li>
             <li>
-              <i className="bx bxl-github text-black"></i>
+              <a href="https://github.com/yubisaYO?tab=repositories">
+                <i className="bx bxl-github text-black icon"></i>
+              </a>
               <a
                 href="https://github.com/yubisaYO?tab=repositories"
                 target="_blank"
@@ -85,8 +96,8 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full">
-          <h2 className="text-3xl lg:text-4xl font-semibold mb-4 w-full lg:bg-red-50 pr-3">
+        <div className="w-full lg:w-3/4 lg:h-full lg:px-5 md:py-3 lg:py-10 lg:flex lg:flex-col lg:gap-10">
+          <h2 className="text-2xl md:text-3xl mb-4 md:mb-4 lg:mb-0 lg:3xl text-center font-bold md:hidden lg:block">
             Feel Free to Contact Me 😁
           </h2>
           <form
@@ -95,37 +106,36 @@ const Contact = () => {
             ref={form}
             onSubmit={sendEmail}
           >
-            <div className="w-1/2 info flex flex-col gap-5 md:gap-10">
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full"
-                name="user_name"
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full"
-                name="user_subject"
-              />
-              <input
-                type="email"
-                name="user_email"
-                placeholder="Email"
-                className="w-full"
-              />
-            </div>
+            <input
+              type="text"
+              placeholder="Name"
+              className="dataForm"
+              name="user_name"
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              className="dataForm"
+              name="user_subject"
+            />
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Email"
+              className="dataForm"
+            />
             <textarea
               name="message"
               id=""
               cols="25"
               rows="10"
               placeholder="Message"
-              className="txtArea w-full"
+              className="txtArea w-full bg-blue-50 p-2"
+              style={{ border: "2px solid grey" }}
             ></textarea>
 
             <button
-              className="bg-blue-400 px-8 py-4 w-fit rounded-lg shadow-md text-white font-bold text-xl"
+              className="bg-blue-400 mx-auto px-8 py-4 w-fit rounded-lg shadow-md text-white font-bold text-xl lg:mt-auto lg:mx-0"
               type="submit"
               value="Send"
             >

@@ -1,4 +1,24 @@
+.dataForm {
+  width: 100%;
+  background: rgba(239, 246, 255, 255);
+  padding: 10px 5px;
+  border-bottom: 1px solid grey;
+  outline: none;
+}
+
 .linkProfile {
+}
+
+.linkProfile li .icon {
+  font-size: 24px;
+  color: black;
+}
+
+.linkProfile li span {
+  display: none;
+}
+
+/* .linkProfile {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -7,20 +27,12 @@
   background-size: cover;
 }
 
-.linkProfile li {
-  font-size: 20px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
+.contactTitle {
+  writingmode: "vertical-rl";
+  textorientation: "upright";
+} */
 
-.info > input {
-  background: white;
-  padding: 20px 10px;
-  border-bottom: 1px solid grey;
-  outline: none;
-}
-
+/*
 .txtArea {
   background: white;
   padding: 20px 10px;
@@ -30,8 +42,9 @@
 .linkProfile li span {
   font-size: 16px;
 }
+*/
 
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
   .linkProfile li {
     flex-direction: column;
     text-align: center;
@@ -40,4 +53,43 @@
     gap: 0px;
     background: blue;
   }
+} */
+
+@media (min-width: 768px) {
+  .linkProfile li .icon {
+    font-size: 26px;
+    color: black;
+  }
+}
+@media (min-width: 1024px) {
+  .linkProfile li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    background: white;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .linkProfile li:nth-child(5) {
+    border: none;
+  }
+  .linkProfile li span {
+    display: block;
+  }
+  .dataForm {
+    width: 50%;
+    font-size: 14px;
+    background: rgba(239, 246, 255, 255);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+  }
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
 }

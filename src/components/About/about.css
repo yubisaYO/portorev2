@@ -10,7 +10,7 @@
 }
 
 .aboutTitle {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 3vw;
 }
 
@@ -22,7 +22,8 @@
   height: 2px;
 }
 .descAbout {
-  font-size: 2.8vw;
+  /* font-size: 2.8vw; */
+  font-size: 17px;
   text-align: justify;
 }
 
@@ -45,6 +46,9 @@
 }
 .skillList li {
   font-size: 15px;
+  padding: 6px 14px;
+  border-radius: 10px;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -55,7 +59,7 @@
     gap: 2vw;
   }
   .aboutTitle {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 3vw;
   }
 
@@ -102,7 +106,7 @@
     gap: 1.5vw;
   }
   .aboutTitle {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 3vw;
   }
 
@@ -155,7 +159,7 @@
     gap: 0.5vw;
   }
   .aboutTitle {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 3vw;
   }
 

@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 
@@ -12,8 +11,8 @@ const App = () => {
     <div className="font-mons text-neutral-600">
       {/*  Home   */}
 
-      <section id="#" className="h-screen overflow-hidden">
-        <div className="h-full w-full bg-blue-50 relative">
+      <section id="#" className="overflow-hidden">
+        <div className="min-h-screen w-full bg-blue-50 relative">
           <Navbar />
           <Hero />
         </div>
@@ -21,7 +20,7 @@ const App = () => {
 
       <section
         id="about"
-        className="h-screen bg-white flex flex-col gap-2 px-4"
+        className="min-h-screen bg-white flex flex-col gap-2 px-4"
       >
         <About />
       </section>
@@ -36,7 +35,7 @@ const App = () => {
         <Projects />
       </section>
 
-      <section id="contact" className="p-4">
+      <section id="contact" className="p-4 min-h-screen">
         <Contact />
       </section>
       <section

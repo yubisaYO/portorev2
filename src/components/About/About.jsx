@@ -8,7 +8,9 @@ const About = () => {
     >
       <div className="flex flex-col items-center content descContainer">
         <div className="">
-          <h1 className="aboutTitle font-bold">About Me</h1>
+          <h1 className="aboutTitle font-bold">
+            About <span className="text-indigo-400">Me</span>
+          </h1>
           <span className="aboutLine"></span>
         </div>
         <div className="descContent">
