@@ -1,6 +1,17 @@
 import React, { useRef, useState } from "react";
 import { faCode, faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./project.css";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Project = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -19,58 +30,73 @@ const Project = ({ data }) => {
   };
   return (
     <div
-      className="relative overflow-hidden rounded-lg bg-white"
+      className="relative rounded-lg bg-white"
       onMouseEnter={mouseIn}
       onMouseLeave={mouseOut}
-      style={{ width: "300px", height: "400px", border: "3px solid white" }}
+      style={{ width: "300px", minHeight: "400px", border: "3px solid white" }}
     >
       <img src={data.img} alt="" className="w-full h-full object-fill" />
 
       {isHovered ? (
         <div
-          className="absolute animate__animated animate__fadeInUp left-0 top-1/2 h-full flex flex-col bg-white"
+          className="absolute animate__animated animate__fadeInUp top-1/4 flex flex-col parent h-3/4 w-full"
           ref={menuRef}
         >
-          <h1 className="bg-indigo-400 p-2 rounded-t-lg font-bold text-white">
+          <h1 className="rounded-t-lg font-bold text-white bg-indigo-400 p-2 projectTitle">
             {data.title}
           </h1>
-          <div className="bg-white flex flex-col gap-2 items-start p-2">
-            <p className="text-neutral-400 text-sm text-left">
+          <div className="flex flex-col gap-2 p-2 h-full overflow-y-hidden bg-white">
+            <p className="text-neutral-400 text-sm w-full break-all h-4/5 overflow-y-auto projectDesc text-justify">
               {data.description}
             </p>
-            <ul className="flex justify-center text-black gap-3 flex-wrap">
-              {data.using.map((item) => {
-                return (
-                  <li
-                    key={item.id}
-                    className="border-2 border-indigo-400 rounded-2xl px-4 py-2 text-sm text-black"
-                  >
-                    {item}
-                  </li>
-                );
-              })}
-            </ul>
+            <div className="h-1/5 relative overflow-y-visible">
+              <Swiper
+                className="text-black gap-3 w-full h-full overflow-y-visible"
+                spaceBetween={5}
+                slidesPerView={3}
+                grabCursor={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Autoplay, Pagination, Navigation]}
+              >
+                {data.using.map((item) => {
+                  return (
+                    <SwiperSlide
+                      key={item.id}
+                      className="border-2 border-indigo-400 rounded-2xl px-2 py-1 text-sm text-black flex items-center justify-center h-4/5"
+                    >
+                      {item}
+                    </SwiperSlide>
+                  );
+                })}
+              </Swiper>
+            </div>
           </div>
-          <div className="border-2 border-t-neutral-400  flex mb-4 items-center h-14">
+          <div className="border-2 border-t-neutral-400 test flex mt-auto bg-white">
             <a
-              className="w-1/2 border-2 border-r-neutral-400 h-full flex items-center justify-center cursor-pointer"
+              className="flex-1 p-2 border-r-2 border-slate-200"
               href={data.git}
               target="_blank"
+              rel="noreferrer"
             >
-              <FontAwesomeIcon icon={faCode} />
+              <FontAwesomeIcon icon={faCode} className="text-xs" />
               <span>Code</span>
             </a>
 
             <a
-              className="w-1/2 h-full flex items-center justify-center cursor-pointer"
+              className="flex-1 p-2"
               href={data.view}
               target="_blank"
+              rel="noreferrer"
             >
-              <FontAwesomeIcon icon={faEye} />
+              <FontAwesomeIcon icon={faEye} className="text-xs" />
               <span>View</span>
             </a>
-
-            <span className="flex-1"></span>
           </div>
         </div>
       ) : (

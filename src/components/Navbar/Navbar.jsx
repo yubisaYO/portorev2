@@ -33,22 +33,22 @@ const Navbar = () => {
       <ul className="hidden md:flex text-sm items-center uppercase font-semibold">
         {/* Tambahkan onClick untuk menutup menu saat item menu diklik */}
         <li className="mr-3" onClick={toggleMenu}>
-          <a href="#" className="hover:opacity-80">
+          <a href="#" className="hover:text-indigo-400">
             Home
           </a>
         </li>
         <li className="mr-3" onClick={toggleMenu}>
-          <a href="#about" className="hover:opacity-80">
+          <a href="#about" className="hover:text-indigo-400">
             About
           </a>
         </li>
         <li className="mr-3" onClick={toggleMenu}>
-          <a href="#projects" className="hover:opacity-80">
+          <a href="#projects" className="hover:text-indigo-400">
             Projects
           </a>
         </li>
         <li className="" onClick={toggleMenu}>
-          <a href="#contact" className="hover:opacity-80">
+          <a href="#contact" className="hover:text-indigo-400">
             Contact
           </a>
         </li>
@@ -63,23 +63,23 @@ const Navbar = () => {
           menu ? "menu-open animate__animated animate__fadeInDown" : "hidden"
         } space-y-6 py-4 rounded-b-lg`}
       >
-        <li className="p-4 text-black">
-          <a href="#" className="hover:opacity-80 text-black">
+        <li className="p-4">
+          <a href="#" className="hover:text-indigo-400">
             Home
           </a>
         </li>
         <li className="p-4">
-          <a href="#about" className="hover:opacity-80">
+          <a href="#about" className="hover:text-indigo-400">
             About
           </a>
         </li>
         <li className="p-4">
-          <a href="#projects" className="hover:opacity-80">
+          <a href="#projects" className="hover:text-indigo-400">
             Projects
           </a>
         </li>
         <li className=" p-4">
-          <a href="#contact" className="hover:opacity-80">
+          <a href="#contact" className="hover:text-indigo-400">
             Contact
           </a>
         </li>

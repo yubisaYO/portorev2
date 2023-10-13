@@ -6,6 +6,8 @@
   ); /* Mendefinisikan 3 kolom dengan lebar yang sama */
 }
 
+
+
 @media (max-width: 1000px) {
   .projects {
     grid-template-columns: repeat(

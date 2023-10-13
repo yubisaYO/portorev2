@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       style={{ maxWidth: "1250px" }}
-      className="mx-auto w-full aboutContainer my-auto"
+      className="mx-auto w-full aboutContainer my-auto py-10 h-full"
     >
       <div className="flex flex-col items-center content descContainer">
         <div className="">

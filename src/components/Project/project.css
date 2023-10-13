@@ -1,0 +1,17 @@
+.swiper-pagination {
+  bottom: -10px !important;
+  /* harus kasi important soalnya udh ada bawaan css gt deh */
+}
+
+.projectDesc {
+  scrollbar-width: thin;
+}
+
+.projectDesc::-webkit-scrollbar {
+  width: 10px; /* Lebar scroll bar */
+}
+
+.projectDesc::-webkit-scrollbar-thumb {
+  background: #888; /* Warna thumb (bagian yang dapat digerakkan) scroll bar */
+  margin-left: 5px; /* Menambahkan margin kiri */
+}

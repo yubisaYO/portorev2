@@ -6,7 +6,8 @@ const dataProject = [
   {
     id: 1,
     title: "Shopping Notes",
-    description: "A simple website to notes that can record our shopping list",
+    description:
+      "A simple website that i focusing on using react usestate feature to take care of what item is clicking right now and other things like total amount item that selected at that all component will be dynamic based on the user's clicked",
     using: ["reactjs", "css"],
     img: "./project-1.png",
     git: "https://github.com/yubisaYO/ShoppingNote",
@@ -15,7 +16,8 @@ const dataProject = [
   {
     id: 2,
     title: "Movie API",
-    description: "A movie website that using API to search for list movie",
+    description:
+      "A movie that using tmbdb api for accessing data JSON as movie data that they provided so i starting with using axios libary to do some GET operation and combined with useeffect that will run API at the first time and usestate to get manage the show movie item based on search bar inputted movie",
     using: ["react js", "tmdb api", "css"],
     img: "./project-2.png",
     git: "https://github.com/yubisaYO/MovieAPI",
@@ -24,8 +26,9 @@ const dataProject = [
   {
     id: 3,
     title: "Restaurant",
-    description: "A full landing page UI of restaurant website",
-    using: ["html", "css"],
+    description:
+      "A full landing page UI of restaurant website with html css that already be responsive website that combined with using icon from boxicons, so in this project i try to make a UI for restaurant that have a user friendly UI",
+    using: ["html", "css", "boxicons"],
     img: "./project-3.png",
     git: "https://github.com/yubisaYO/Restaurant",
     view: "https://restaurant-site-pearl.vercel.app/",
@@ -34,7 +37,8 @@ const dataProject = [
   {
     id: 4,
     title: "Game",
-    description: "A simple game that can move up down left right by arrow",
+    description:
+      "A simple game that can move up down left right by arrow using vanilla javascript",
 
     using: ["html", "css", "js"],
     img: "./project-4.png",
@@ -44,7 +48,8 @@ const dataProject = [
   {
     id: 5,
     title: "FreeMoney",
-    description: "A simple system that recording transaction IN and OUT",
+    description:
+      "A simple system that recording transaction IN and OUT transaction that using the usestate to track the functional component",
 
     using: ["reactjs", "css"],
     img: "./project-5.png",
@@ -56,7 +61,7 @@ const dataProject = [
     title: "ANOTHER FULL STACK WEB",
     description: "I CANT DEPLOY BUT HERE IS THE GITHUB REPOSITORY",
 
-    using: ["mongoose", "mysql", "js"],
+    using: ["mongoose", "mysql", "sqlserver", "reactjs", "nextjs", "c#"],
     img: "./project-6.png",
     git: "https://github.com/yubisaYO",
     view: "https://github.com/yubisaYO",
@@ -71,8 +76,8 @@ const Projects = () => {
       </h1>
 
       <div className="grid gap-x-3 gap-y-6 justify-items-center animate__animated animate__fadeInLeft projects">
-        {dataProject.map((project) => (
-          <Project data={project} />
+        {dataProject.map((project, i) => (
+          <Project data={project} key={i} />
         ))}
       </div>
     </div>

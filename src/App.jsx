@@ -9,8 +9,6 @@ import Contact from "./components/Contact/Contact";
 const App = () => {
   return (
     <div className="font-mons text-neutral-600">
-      {/*  Home   */}
-
       <section id="#" className="overflow-hidden">
         <div className="min-h-screen w-full bg-blue-50 relative">
           <Navbar />

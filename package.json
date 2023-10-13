@@ -15,11 +15,13 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@splidejs/react-splide": "^0.7.12",
     "animate.css": "^4.1.1",
     "autotyping": "^1.2.6",
     "boxicons": "^2.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "swiper": "^10.3.1",
     "typed.js": "^2.0.16"
   },
   "devDependencies": {

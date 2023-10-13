@@ -28,24 +28,24 @@ const Hero = () => {
   return (
     <div className="min-h-screen flex justify-center items-center">
       <div
-        className="h-full w-full hero-container"
+        className="h-full w-full hero-container min-h-[70%]"
         style={{ maxWidth: "1250px" }}
       >
         <div
           className="
-       rounded-full overflow-x-hidden border-2 border-black heroImg"
+       rounded-full overflow-x-hidden border-2 border-black heroImg mt-28 md:mt-4"
         >
           <img
             src="./hero-3.png"
             alt=""
-            className="w-full h-full object-cover bg-blue-500"
+            className="w-full h-full object-cover bg-blue-500 "
           />
         </div>
         {/* 
       <div className="hidden 2xl:absolute -bottom-1/4 w-big h-big rounded-full -z-5 bg-gradient-to-t from-bg-whtie to bg-blue-200 left-16"></div> */}
 
         {/* animated text occupation */}
-        <div className="font-semibold animate__animated animate__fadeInDown desc">
+        <div className="font-semibold animate__animated animate__fadeInDown desc mb-5 md:mb-0">
           <h1 className="name">Hi, I&rsquo;m Charles</h1>
 
           <div className="flex items-center">
