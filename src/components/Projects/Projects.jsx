@@ -5,13 +5,13 @@ import "./projects.css";
 const dataProject = [
   {
     id: 1,
-    title: "Shopping Notes",
+    title: "NextGallery",
     description:
-      "A simple website that i focusing on using react usestate feature to take care of what item is clicking right now and other things like total amount item that selected at that all component will be dynamic based on the user's clicked",
-    using: ["reactjs", "css"],
+      "NextGallery is a captivating website built with Next.js and styled with Tailwind CSS. This dynamic platform enables you to curate and showcase your impressive gallery of works, making it a perfect choice for artists, photographers, and creative professionals.",
+    using: ["nextjs", "tailwind", "css"],
     img: "./project-1.png",
-    git: "https://github.com/yubisaYO/ShoppingNote",
-    view: "https://shopping-note.vercel.app/",
+    git: "https://github.com/yubisaYO/PameranCharles",
+    view: "https://pameran-charles.vercel.app/contact",
   },
   {
     id: 2,

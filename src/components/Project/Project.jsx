@@ -30,7 +30,7 @@ const Project = ({ data }) => {
   };
   return (
     <div
-      className="relative rounded-lg bg-white"
+      className="relative rounded-lg bg-white overflow-y-hidden"
       onMouseEnter={mouseIn}
       onMouseLeave={mouseOut}
       onClick={isHovered ? mouseOut : mouseIn}
@@ -40,7 +40,7 @@ const Project = ({ data }) => {
 
       {isHovered ? (
         <div
-          className="absolute animate__animated animate__fadeInUp top-1/4 flex flex-col parent h-3/4 w-full"
+          className="absolute animate__animated animate__fadeInUp top-1/4 flex flex-col parent h-3/4 w-full overflow-hidden"
           ref={menuRef}
         >
           <h1 className="rounded-t-lg font-bold text-white bg-indigo-400 p-2 projectTitle">
