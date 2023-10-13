@@ -17,11 +17,11 @@ const dataProject = [
     id: 2,
     title: "Movie API",
     description:
-      "A movie that using tmbdb api for accessing data JSON as movie data that they provided so i starting with using axios libary to do some GET operation and combined with useeffect that will run API at the first time and usestate to get manage the show movie item based on search bar inputted movie",
-    using: ["react js", "tmdb api", "css"],
+      "The Movie Search Application is a web-based platform designed to provide users with easy access to a vast database of movie information, powered by the OMDB API. Using JavaScript as its primary technology, this application using fetching data and asynchronus method to do the operation and also using DOM",
+    using: ["html", "js", "tmdb api", "bootstrap"],
     img: "./project-2.png",
-    git: "https://github.com/yubisaYO/MovieAPI",
-    view: "https://movie-api-green-delta.vercel.app/",
+    git: "https://github.com/yubisaYO/MovieOmdbAPI",
+    view: "https://movie-omdb-api-ten.vercel.app/",
   },
   {
     id: 3,
@@ -36,14 +36,14 @@ const dataProject = [
 
   {
     id: 4,
-    title: "Game",
+    title: "Kenangan Senja",
     description:
-      "A simple game that can move up down left right by arrow using vanilla javascript",
+      "Kenangan Senja is a comprehensive coffee website created with a perfect blend of Bootstrap CSS and DOM traversal techniques. This dynamic platform allows users to explore an extensive coffee catalog, from a curated list of coffee varieties to in-depth coffee details.",
 
-    using: ["html", "css", "js"],
+    using: ["html", "css", "js", "bootstrap"],
     img: "./project-4.png",
-    git: "https://github.com/yubisaYO/GameSimple",
-    view: "https://game-simple.vercel.app/",
+    git: "https://github.com/yubisaYO/KenanganSenja",
+    view: "https://kenangan-senja-peach.vercel.app/",
   },
   {
     id: 5,

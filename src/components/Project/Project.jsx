@@ -33,6 +33,7 @@ const Project = ({ data }) => {
       className="relative rounded-lg bg-white"
       onMouseEnter={mouseIn}
       onMouseLeave={mouseOut}
+      onClick={isHovered ? mouseOut : mouseIn}
       style={{ width: "300px", minHeight: "400px", border: "3px solid white" }}
     >
       <img src={data.img} alt="" className="w-full h-full object-fill" />
