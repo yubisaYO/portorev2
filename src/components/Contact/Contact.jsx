@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full h-full max-w-screen-xl mx-auto flex gap-20 bg-indigo-500 px-4 py-5 rounded-3xl shadow-xl ">
+    <div className="w-full h-screen max-w-screen-xl mx-auto flex gap-20 bg-indigo-500 px-4 py-5 rounded-3xl shadow-xl ">
       <div className="p-4 w-full h-full mx-auto flex flex-col justify-evenly items-center rounded-lg bg-blue-50 lg:flex-row lg:justify-center lg:py-0 lg:pl-0 shadow-lg">
         <div className="w-full lg:w-1/4 lg:flex lg:h-full lg:border-solid lg:border-2 lg:border-r-gray-500 lg:border-y-black">
           <h1 className="hidden md:block md:text-4xl md:mb-4 lg:hidden  text-center font-bold">
