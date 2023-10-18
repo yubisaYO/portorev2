@@ -28,17 +28,17 @@ const Hero = () => {
   return (
     <div className="min-h-screen flex justify-center items-center">
       <div
-        className="h-full w-full hero-container min-h-[70%]"
+        className="h-full w-full hero-container min-h-[70%] justify-evenly"
         style={{ maxWidth: "1250px" }}
       >
         <div
           className="
-       rounded-full overflow-x-hidden border-2 border-black heroImg mt-28 md:mt-4"
+       rounded-full overflow-x-hidden border-2 border-black heroImg mt-28 md:mt-4 bg-blue-500"
         >
           <img
             src="./hero-3.png"
             alt=""
-            className="w-full h-full object-cover bg-blue-500 "
+            className="w-full h-full object-cover "
           />
         </div>
         {/* 

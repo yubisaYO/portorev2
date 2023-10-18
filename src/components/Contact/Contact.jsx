@@ -34,15 +34,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full h-screen max-w-screen-xl mx-auto flex gap-20 bg-indigo-500 px-4 py-5 rounded-3xl shadow-xl ">
-      <div className="p-4 w-full h-full mx-auto flex flex-col justify-evenly items-center rounded-lg bg-blue-50 lg:flex-row lg:justify-center lg:py-0 lg:pl-0 shadow-lg">
-        <div className="w-full lg:w-1/4 lg:flex lg:h-full lg:border-solid lg:border-2 lg:border-r-gray-500 lg:border-y-black">
-          <h1 className="hidden md:block md:text-4xl md:mb-4 lg:hidden  text-center font-bold">
+    <div className="w-full min-h-screen max-w-screen-xl mx-auto flex gap-20 bg-indigo-500 px-4 py-5 rounded-3xl shadow-xl ">
+      <div className="p-4 w-full min-h-full mx-auto flex flex-col justify-evenly items-center rounded-lg bg-blue-50 lg:flex-row lg:py-0 lg:pl-0 shadow-lg">
+        <div className="w-full lg:w-1/4 lg:flex lg:min-h-full lg:border-solid lg:border-2 lg:border-r-gray-500 lg:border-y-black">
+          <h1 className=" hidden md:block md:text-4xl md:mb-4 lg:hidden text-center font-bold">
             My Contact Info
           </h1>
           <h1
             style={{ writingMode: "vertical-rl", textOrientation: "upright" }}
-            className="hidden lg:block  text-3xl text-center font-bold px-2 bg-neutral-700 text-white"
+            className="hidden lg:block  text-3xl text-center font-bold px-2 text-white bg-neutral-600"
           >
             My <strong className="text-indigo-400">Contact</strong> Info
           </h1>
@@ -96,7 +96,8 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full lg:w-3/4 lg:h-full lg:px-5 md:py-3 lg:py-10 lg:flex lg:flex-col lg:gap-10">
+
+        <div className="w-full lg:w-3/4 lg:min-h-full lg:px-5 md:py-3 lg:py-10 lg:flex lg:flex-col lg:gap-10">
           <h2 className="text-2xl md:text-3xl mb-4 md:mb-4 lg:mb-0 lg:3xl text-center font-bold md:hidden lg:block">
             Feel Free to Contact Me 😁
           </h2>

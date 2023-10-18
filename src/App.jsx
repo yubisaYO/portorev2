@@ -38,7 +38,7 @@ const App = () => {
       </section>
       <section
         id="footer"
-        className="p-4 bg-gradient-to-r from-blue-50 to-blue-950"
+        className="p-4 bg-gradient-to-r from-blue-50 to-blue-950 min-h-[50px] flex items-center justify-center"
       >
         <Footer />
       </section>
