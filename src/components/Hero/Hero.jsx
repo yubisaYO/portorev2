@@ -85,7 +85,7 @@ const Hero = () => {
           </ul>
           <button className="bg-indigo-400 w-fit rounded-lg shadow-md font-bold text-white mt-auto cv">
             <a
-              href="https://binusianorg-my.sharepoint.com/personal/charles008_binus_ac_id/_layouts/15/guestaccess.aspx?share=EYMss9yenVtJodM1hcpQfjQBkvsriQ69lpsSCJDsKiWwNg&e=G4FlNB"
+              href="https://binusianorg-my.sharepoint.com/personal/charles008_binus_ac_id/_layouts/15/guestaccess.aspx?share=EYMss9yenVtJodM1hcpQfjQBkvsriQ69lpsSCJDsKiWwNg&e=nurMS8"
               target="_blank"
               rel="noreferrer"
             >
